@@ -3,7 +3,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker' 
   args: [ 
     'build', '--build-arg', 
-    'VITE_API_URL=https://console.cloud.google.com/cloud-build/builds;region=global/7e4d9045-a825-455e-a94a-f7057f236a38?hl=en&project=avid-battery-476221-r9, 
+    'VITE_API_URL=YOUR_BACKEND_DEPLOYMENT_URL_HERE', 
     '-t', 'gcr.io/$PROJECT_ID/recipe-frontend', 
     './frontend'
   ] 
